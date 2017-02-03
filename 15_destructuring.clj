@@ -8,8 +8,8 @@
 
 (meditations
   "Destructuring is an arbiter: it breaks up arguments"
-  (= __ ((fn [[a b]] (str b a))
-         [:foo :bar]))
+  (= ":bar:foo" ((fn [[a b]] (str b a))
+                 [:foo :bar]))
 
   "Whether in function definitions"
   (= (str "An Oxford comma list of apples, "
